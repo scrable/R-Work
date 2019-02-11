@@ -1,0 +1,16 @@
+---
+title: "MATH 324 Computer HW 1"
+author: "Tom Jerry"
+date: "Due date of Computer HW 1"
+output: html_document
+---
+
+###Exercise 1: 
+####(a) Give numerical summaries of data frame **cars**. Add code to the chunks.
+
+```{r}
+summary(cars)
+```
+
+####(b) Make Comments.
+The average for speed is about....
