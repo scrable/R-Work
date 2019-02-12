@@ -1,7 +1,7 @@
 ---
 title: "MATH 324 Computer HW 1"
-author: "Tom Jerry"
-date: "Due date of Computer HW 1"
+author: "Corey Russ"
+date: "2/14/19"
 output: html_document
 ---
 
