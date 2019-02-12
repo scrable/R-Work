@@ -1,6 +1,8 @@
 ---
 title: "Introduction to R"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 ##1. Entering data
 ###1.1 Defining variables

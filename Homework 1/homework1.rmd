@@ -2,15 +2,53 @@
 title: "MATH 324 Computer HW 1"
 author: "Corey Russ"
 date: "2/14/19"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
-###Exercise 1: 
-####(a) Give numerical summaries of data frame **cars**. Add code to the chunks.
+## Exercise 1: 
+#### (a) Use c() to generate two datasets.
 
 ```{r}
-summary(cars)
+modifiedMortar=c(16.85, 16.40, 17.21, 16.35, 16.52, 17.04, 16.96, 17.15, 16.59, 16.57)
+unmodifiedMortar=c(16.62, 16.75, 17.37, 17.12, 16.98, 16.87, 17.34, 17.02, 17.08, 17.27)
 ```
 
-####(b) Make Comments.
-The average for speed is about....
+#### (b) Use mean() and median() to calculate the mean and median of each dataset.
+
+```{r}
+
+```
+
+#### (c) Use sd(), var() and IQR() to calculate the sample standard deviation, sample variance
+and IQR of each dataset.
+
+#### (d)
+
+#### (e)
+
+## Exercise 2:
+
+#### (a)
+
+#### (b)
+
+#### (c)
+
+#### (d)
+
+#### (e)
+
+## Exercise 3:
+
+#### (a)
+
+#### (b)
+
+#### (c)
+
+#### (d)
+
+
+
