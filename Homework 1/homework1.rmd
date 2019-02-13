@@ -3,8 +3,8 @@ title: "MATH 324 Computer HW 1"
 author: "Corey Russ"
 date: "Due: 2/14/19"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ## Exercise 1: 
