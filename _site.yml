@@ -1,8 +1,0 @@
-name: "R"
-navbar:
-  title: "My R Stuff"
-  left:
-    - text: "Home"
-      href: index.html
-    - text: "About"
-      href: about.html

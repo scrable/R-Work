@@ -1,5 +1,0 @@
----
-title: "R Work"
----
-
-Collection of R work for P&S

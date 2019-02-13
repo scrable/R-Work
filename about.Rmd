@@ -1,5 +1,0 @@
----
-title: "This is a collection of R Work"
----
-
-Used for probability and statistics class
