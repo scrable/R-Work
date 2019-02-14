@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://scrable.github.io/R-Work/"
 publishDir = "."
 languageCode = "en-us"
 title = "R Labs"
