@@ -1,5 +1,5 @@
 ---
-title: "about"
+title: "About"
 author: "Corey Russ"
 date: 2019-02-13
 ---

@@ -21,18 +21,7 @@
     </item>
     
     <item>
-      <title>Introduction to R</title>
-      <link>https://scrable.github.io/R-Work/introduction/</link>
-      <pubDate>Wed, 13 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://scrable.github.io/R-Work/introduction/</guid>
-      <description>##1. Entering data ###1.1 Defining variables
-x=3 y=4 3*x ## [1] 9 x+y ## [1] 7 y^2 ## [1] 16 ###1.2 Using c() function
-my.data=c(11,14,22,15) #this code will create your dataset and assign it the variable name my.data my.data #If you want to know what a variable holds, you must ask for it by name ## [1] 11 14 22 15 my.data+500 ## [1] 511 514 522 515 2*my.data ## [1] 22 28 44 30 length(my.</description>
-    </item>
-    
-    <item>
-      <title>about</title>
+      <title>About</title>
       <link>https://scrable.github.io/R-Work/about/</link>
       <pubDate>Wed, 13 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -41,6 +30,17 @@ my.data=c(11,14,22,15) #this code will create your dataset and assign it the var
 Hugo Hugo is the world’s fastest framework for building websites. It is written in Go.
 It makes use of a variety of open source projects including:
  https://github.com/russross/blackfriday https://github.com/alecthomas/chroma https://github.com/muesli/smartcrop https://github.com/spf13/cobra https://github.com/spf13/viper  Learn more and contribute on GitHub.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to R</title>
+      <link>https://scrable.github.io/R-Work/introduction/</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://scrable.github.io/R-Work/introduction/</guid>
+      <description>##1. Entering data ###1.1 Defining variables
+x=3 y=4 3*x ## [1] 9 x+y ## [1] 7 y^2 ## [1] 16 ###1.2 Using c() function
+my.data=c(11,14,22,15) #this code will create your dataset and assign it the variable name my.data my.data #If you want to know what a variable holds, you must ask for it by name ## [1] 11 14 22 15 my.data+500 ## [1] 511 514 522 515 2*my.data ## [1] 22 28 44 30 length(my.</description>
     </item>
     
   </channel>
