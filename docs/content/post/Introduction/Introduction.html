@@ -1,0 +1,450 @@
+---
+title: "Introduction to R"
+date: 2019-02-13
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+
+<p>##1. Entering data
+###1.1 Defining variables</p>
+<pre class="r"><code>x=3  
+y=4
+3*x</code></pre>
+<pre><code>## [1] 9</code></pre>
+<pre class="r"><code>x+y</code></pre>
+<pre><code>## [1] 7</code></pre>
+<pre class="r"><code>y^2</code></pre>
+<pre><code>## [1] 16</code></pre>
+<p>###1.2 Using c() function</p>
+<pre class="r"><code>my.data=c(11,14,22,15)    #this code will create your dataset and assign it the variable name my.data
+my.data    #If you want to know what a variable holds, you must ask for it by name</code></pre>
+<pre><code>## [1] 11 14 22 15</code></pre>
+<pre class="r"><code>my.data+500</code></pre>
+<pre><code>## [1] 511 514 522 515</code></pre>
+<pre class="r"><code>2*my.data</code></pre>
+<pre><code>## [1] 22 28 44 30</code></pre>
+<pre class="r"><code>length(my.data)</code></pre>
+<pre><code>## [1] 4</code></pre>
+<p>###1.3 Using :</p>
+<pre class="r"><code>stats.data=1:5   #this code will create your sequence of data from 1 to 5, by increments of 1
+stats.data   </code></pre>
+<pre><code>## [1] 1 2 3 4 5</code></pre>
+<pre class="r"><code>decreasing.data=5:-6   #this code will create your sequence of data from 5 to -6, by increments of -1
+decreasing.data </code></pre>
+<pre><code>##  [1]  5  4  3  2  1  0 -1 -2 -3 -4 -5 -6</code></pre>
+<p>###1.4 Using seq() function</p>
+<pre class="r"><code>seq(0,3,by=2)   # seq(low.number, high.number, increment.size)</code></pre>
+<pre><code>## [1] 0 2</code></pre>
+<pre class="r"><code>seq(0,3,length=5)  # seq(low.number, high.number, sequence.length)</code></pre>
+<pre><code>## [1] 0.00 0.75 1.50 2.25 3.00</code></pre>
+<p>###1.5 Using rep() function</p>
+<pre class="r"><code>rep(c(1,2,3), each=3) </code></pre>
+<pre><code>## [1] 1 1 1 2 2 2 3 3 3</code></pre>
+<pre class="r"><code>rep(c(1,2,3), times=3) </code></pre>
+<pre><code>## [1] 1 2 3 1 2 3 1 2 3</code></pre>
+<p>##2. Math Functions</p>
+<pre class="r"><code>2 + 4 * 5      # Order of operations</code></pre>
+<pre><code>## [1] 22</code></pre>
+<pre class="r"><code>log (10)       # Natural logarithm with base e=2.7182</code></pre>
+<pre><code>## [1] 2.302585</code></pre>
+<pre class="r"><code>log10(5)      # Common logarithm with base 10</code></pre>
+<pre><code>## [1] 0.69897</code></pre>
+<pre class="r"><code>5^2             # 5 raised to the second power</code></pre>
+<pre><code>## [1] 25</code></pre>
+<pre class="r"><code>5/8             # Division</code></pre>
+<pre><code>## [1] 0.625</code></pre>
+<pre class="r"><code>sqrt (16)      # Square root</code></pre>
+<pre><code>## [1] 4</code></pre>
+<pre class="r"><code>abs (3-7)     # Absolute value </code></pre>
+<pre><code>## [1] 4</code></pre>
+<pre class="r"><code>pi                # 3.14</code></pre>
+<pre><code>## [1] 3.141593</code></pre>
+<pre class="r"><code>exp(2)         # Exponential function </code></pre>
+<pre><code>## [1] 7.389056</code></pre>
+<pre class="r"><code>round(pi,0)  # Round pi to a whole number</code></pre>
+<pre><code>## [1] 3</code></pre>
+<pre class="r"><code>round(pi,1)  # Round pi to 1 decimal place</code></pre>
+<pre><code>## [1] 3.1</code></pre>
+<pre class="r"><code>round(pi,4)  # Round pi to 4 decimal places</code></pre>
+<pre><code>## [1] 3.1416</code></pre>
+<pre class="r"><code>floor(15.9)   # Rounds down</code></pre>
+<pre><code>## [1] 15</code></pre>
+<pre class="r"><code>ceiling(15.1)  # Rounds up</code></pre>
+<pre><code>## [1] 16</code></pre>
+<pre class="r"><code>cos(.5)        # Cosine Function</code></pre>
+<pre><code>## [1] 0.8775826</code></pre>
+<pre class="r"><code>sin(.5)        # Sine Function</code></pre>
+<pre><code>## [1] 0.4794255</code></pre>
+<pre class="r"><code>tan(.5)       # Tangent Function</code></pre>
+<pre><code>## [1] 0.5463025</code></pre>
+<pre class="r"><code>acos(0.8775826)        # Inverse Cosine</code></pre>
+<pre><code>## [1] 0.4999999</code></pre>
+<pre class="r"><code>asin(0.4794255)       # Inverse Sine</code></pre>
+<pre><code>## [1] 0.5</code></pre>
+<pre class="r"><code>atan(0.5463025)      # Inverse Tangent</code></pre>
+<pre><code>## [1] 0.5</code></pre>
+<p>##3. Data Manipulation
+###3.1 Sort your data</p>
+<pre class="r"><code>x=c(1,3,2,10,5)    #create a vector x with 5 components
+sort(x)                # increasing order </code></pre>
+<pre><code>## [1]  1  2  3  5 10</code></pre>
+<pre class="r"><code>sort(x, decreasing=T)  # decreasing order </code></pre>
+<pre><code>## [1] 10  5  3  2  1</code></pre>
+<p>###3.2 Component extraction</p>
+<pre class="r"><code>x </code></pre>
+<pre><code>## [1]  1  3  2 10  5</code></pre>
+<pre class="r"><code>length(x)           # number of elements in x </code></pre>
+<pre><code>## [1] 5</code></pre>
+<pre class="r"><code>x[4]                # the fourth element of x </code></pre>
+<pre><code>## [1] 10</code></pre>
+<pre class="r"><code>x[2:5]              # the second to fifth element of x, inclusive </code></pre>
+<pre><code>## [1]  3  2 10  5</code></pre>
+<pre class="r"><code>x[-2]               # all except the second element </code></pre>
+<pre><code>## [1]  1  2 10  5</code></pre>
+<pre class="r"><code>x[-c(1,2)]          # all except the first and the second elements</code></pre>
+<pre><code>## [1]  2 10  5</code></pre>
+<pre class="r"><code>x[x&gt;3]              # list of elements in x greater than 3 </code></pre>
+<pre><code>## [1] 10  5</code></pre>
+<p>###3.3 Logic vector</p>
+<pre class="r"><code>x&gt;3                   # Which x values are greater than 3</code></pre>
+<pre><code>## [1] FALSE FALSE FALSE  TRUE  TRUE</code></pre>
+<pre class="r"><code>sum(x&gt;3)            # number of elements in x greater than 3 </code></pre>
+<pre><code>## [1] 2</code></pre>
+<p>##4. Numerical Summaries</p>
+<pre class="r"><code>x=c(34, 24, 10, 16, 52, 76, 33, 31, 46, 24, 18, 26, 57, 32, 25, 48, 22, 48, 29, 19)
+x</code></pre>
+<pre><code>##  [1] 34 24 10 16 52 76 33 31 46 24 18 26 57 32 25 48 22 48 29 19</code></pre>
+<pre class="r"><code>max(x)</code></pre>
+<pre><code>## [1] 76</code></pre>
+<pre class="r"><code>min(x)</code></pre>
+<pre><code>## [1] 10</code></pre>
+<pre class="r"><code>which.min(x)</code></pre>
+<pre><code>## [1] 3</code></pre>
+<pre class="r"><code>which.max(x)</code></pre>
+<pre><code>## [1] 6</code></pre>
+<pre class="r"><code>mean(x)</code></pre>
+<pre><code>## [1] 33.5</code></pre>
+<pre class="r"><code>mean(x, trim = 0.1)</code></pre>
+<pre><code>## [1] 31.9375</code></pre>
+<pre class="r"><code>median(x)</code></pre>
+<pre><code>## [1] 30</code></pre>
+<pre class="r"><code>sd(x)</code></pre>
+<pre><code>## [1] 16.31435</code></pre>
+<pre class="r"><code>var(x)</code></pre>
+<pre><code>## [1] 266.1579</code></pre>
+<pre class="r"><code>range(x)</code></pre>
+<pre><code>## [1] 10 76</code></pre>
+<pre class="r"><code>sum(x)</code></pre>
+<pre><code>## [1] 670</code></pre>
+<pre class="r"><code>summary(x) # Calculate five-number summary: min,Q1,median,Q3,max, return an object</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##    10.0    23.5    30.0    33.5    46.5    76.0</code></pre>
+<pre class="r"><code>my.q=fivenum(x) # calculate five-number summary, return a numeric vector
+quantile(x, c(.25, .5, .75, 1)) ### Calculates the numbers associated to defined percentiles</code></pre>
+<pre><code>##  25%  50%  75% 100% 
+## 23.5 30.0 46.5 76.0</code></pre>
+<pre class="r"><code>quantile(x,0.99)</code></pre>
+<pre><code>##   99% 
+## 72.39</code></pre>
+<pre class="r"><code>iqr=IQR(x)
+
+q1=my.q[2]
+q3=my.q[4]
+q1-1.5*iqr    #lower fence for outliers</code></pre>
+<pre><code>## [1] -11.5</code></pre>
+<pre class="r"><code>q3+1.5*iqr    #upper fence for outliers</code></pre>
+<pre><code>## [1] 81.5</code></pre>
+<pre class="r"><code>q1-3*iqr      #lower fence for extreme outliers</code></pre>
+<pre><code>## [1] -46</code></pre>
+<pre class="r"><code>q3+3*iqr      #upper fence for extreme outliers</code></pre>
+<pre><code>## [1] 116</code></pre>
+<p>##5. Built-in data frames</p>
+<pre class="r"><code>### We need to load a library to work with the battery dataset
+library(EngrExpt); data(battery); attach(battery)</code></pre>
+<pre><code>## Loading required package: lattice</code></pre>
+<pre class="r"><code>### Let&#39;s view the actual dataset
+battery</code></pre>
+<pre><code>##    type lifetime
+## 1     A    2.063
+## 2     A    2.468
+## 3     A    2.308
+## 4     A    2.923
+## 5     A    3.110
+## 6     A    2.425
+## 7     A    2.723
+## 8     A    2.265
+## 9     A    2.755
+## 10    A    2.617
+## 11    B    4.383
+## 12    B    3.898
+## 13    B    5.521
+## 14    B    5.558
+## 15    B    4.675
+## 16    B    2.135
+## 17    B    4.408
+## 18    B    2.170
+## 19    B    3.551
+## 20    B    3.582
+## 21    C    8.047
+## 22    C    4.230
+## 23    C    8.160
+## 24    C   11.100
+## 25    C    5.500
+## 26    C   11.600
+## 27    C    4.970
+## 28    C    9.830
+## 29    C    3.503
+## 30    C    8.063</code></pre>
+<pre class="r"><code>### The following 3 lines of code will create three separate datasets
+### by battery type 
+type.a=subset(battery, type==&quot;A&quot;)
+
+type.b=subset(battery, type==&quot;B&quot;)
+
+type.c=subset(battery, type==&quot;C&quot;)
+
+
+### Let&#39;s take a look at dataset type.a
+type.a</code></pre>
+<pre><code>##    type lifetime
+## 1     A    2.063
+## 2     A    2.468
+## 3     A    2.308
+## 4     A    2.923
+## 5     A    3.110
+## 6     A    2.425
+## 7     A    2.723
+## 8     A    2.265
+## 9     A    2.755
+## 10    A    2.617</code></pre>
+<pre class="r"><code>### Let&#39;s look at just the lifetime variable within the type.a dataset
+type.a$lifetime      ### DataSetName$VariableName</code></pre>
+<pre><code>##  [1] 2.063 2.468 2.308 2.923 3.110 2.425 2.723 2.265 2.755 2.617</code></pre>
+<pre class="r"><code>### Now, we can analyze the lifetime variable within the type.a dataset
+mean(type.a$lifetime)</code></pre>
+<pre><code>## [1] 2.5657</code></pre>
+<pre class="r"><code>sd(type.a$lifetime)</code></pre>
+<pre><code>## [1] 0.3207654</code></pre>
+<pre class="r"><code>## more built-in dataframes
+## https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/00Index.html</code></pre>
+<p>##6. Graphics and tables for categorical data</p>
+<pre class="r"><code>#### EXAMPLE OF THE table FUNCTION
+x=c(&quot;Yes&quot;, &quot;No&quot;, &quot;Yes&quot;, &quot;Yes&quot;, &quot;No&quot;)  # Create categorical data
+x</code></pre>
+<pre><code>## [1] &quot;Yes&quot; &quot;No&quot;  &quot;Yes&quot; &quot;Yes&quot; &quot;No&quot;</code></pre>
+<pre class="r"><code>table(x)  # table function returns the frequency for each category of data</code></pre>
+<pre><code>## x
+##  No Yes 
+##   2   3</code></pre>
+<pre class="r"><code>### Now we will use storm/hurricane data
+sh = read.table(&quot;u.s._hurricane_data2011.txt&quot;,header=T)
+cat = sh$cat
+year = sh$year
+
+# Create a table for the category of storm/hurricane
+cat.counts=table(cat)
+
+# Create a table for the year of the storm/hurricane
+year.counts=table(year) 
+
+# View the respective tables
+cat.counts</code></pre>
+<pre><code>## cat
+##  0  1  2  3  4  5 
+## 47 19  6  8  9  6</code></pre>
+<pre class="r"><code>year.counts  </code></pre>
+<pre><code>## year
+## 2005 2006 2007 2008 2009 2010 
+##   27    9   15   16    9   19</code></pre>
+<pre class="r"><code>###### CREATING BAR GRAPHS
+
+# Create a barplot of storm/hurricane categories  
+barplot(cat.counts, col=&quot;red&quot;) </code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-12-1.png" width="672" /></p>
+<pre class="r"><code># Create a barplot using percentages for the years
+barplot(year.counts/length(year), col=&quot;green&quot;) </code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-12-2.png" width="672" /></p>
+<pre class="r"><code>###### CREATING PIE CHARTS
+
+# Basic pie chart 
+pie(year.counts) 
+
+# Add names to your piechart
+names(year.counts)=c(&quot;2005&quot;, &quot;2006&quot;, &quot;2007&quot;, &quot;2008&quot;, &quot;2009&quot;, &quot;2010&quot;)  
+
+
+# Pie chart with names printed out
+pie(year.counts) </code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-12-3.png" width="672" /></p>
+<pre class="r"><code># Now, add a little color and a main :)  
+pie(year.counts, col=rainbow(12), main=&quot;Atlantic Hurricanes by Year&quot;) </code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-12-4.png" width="672" /></p>
+<p>##7. Graphics and tables for quantitative data</p>
+<pre class="r"><code>## stem-and-leaf plot
+### Lets work with the pre-installed cars data set found in R
+cars; attach(cars)</code></pre>
+<pre><code>##    speed dist
+## 1      4    2
+## 2      4   10
+## 3      7    4
+## 4      7   22
+## 5      8   16
+## 6      9   10
+## 7     10   18
+## 8     10   26
+## 9     10   34
+## 10    11   17
+## 11    11   28
+## 12    12   14
+## 13    12   20
+## 14    12   24
+## 15    12   28
+## 16    13   26
+## 17    13   34
+## 18    13   34
+## 19    13   46
+## 20    14   26
+## 21    14   36
+## 22    14   60
+## 23    14   80
+## 24    15   20
+## 25    15   26
+## 26    15   54
+## 27    16   32
+## 28    16   40
+## 29    17   32
+## 30    17   40
+## 31    17   50
+## 32    18   42
+## 33    18   56
+## 34    18   76
+## 35    18   84
+## 36    19   36
+## 37    19   46
+## 38    19   68
+## 39    20   32
+## 40    20   48
+## 41    20   52
+## 42    20   56
+## 43    20   64
+## 44    22   66
+## 45    23   54
+## 46    24   70
+## 47    24   92
+## 48    24   93
+## 49    24  120
+## 50    25   85</code></pre>
+<pre class="r"><code>### default stem, doesn&#39;t represent data so well
+stem(dist)</code></pre>
+<pre><code>## 
+##   The decimal point is 1 digit(s) to the right of the |
+## 
+##    0 | 24004678
+##    2 | 002466668822244466
+##    4 | 002668024466
+##    6 | 046806
+##    8 | 04523
+##   10 | 
+##   12 | 0</code></pre>
+<pre class="r"><code>### The parameter scale can be used to expand the scale of the plot. 
+### A value of scale=2 will cause the plot to be roughly twice ### as long as the default.
+stem(dist, scale=2)</code></pre>
+<pre><code>## 
+##   The decimal point is 1 digit(s) to the right of the |
+## 
+##    0 | 24
+##    1 | 004678
+##    2 | 0024666688
+##    3 | 22244466
+##    4 | 002668
+##    5 | 024466
+##    6 | 0468
+##    7 | 06
+##    8 | 045
+##    9 | 23
+##   10 | 
+##   11 | 
+##   12 | 0</code></pre>
+<pre class="r"><code>### experiment with a scale of 4
+stem(dist, scale=4)</code></pre>
+<pre><code>## 
+##   The decimal point is 1 digit(s) to the right of the |
+## 
+##    0 | 24
+##    0 | 
+##    1 | 004
+##    1 | 678
+##    2 | 0024
+##    2 | 666688
+##    3 | 222444
+##    3 | 66
+##    4 | 002
+##    4 | 668
+##    5 | 0244
+##    5 | 66
+##    6 | 04
+##    6 | 68
+##    7 | 0
+##    7 | 6
+##    8 | 04
+##    8 | 5
+##    9 | 23
+##    9 | 
+##   10 | 
+##   10 | 
+##   11 | 
+##   11 | 
+##   12 | 0</code></pre>
+<pre class="r"><code>### dot plot
+## The following dataset is the time required for a 
+## group of students to complete a statistics quiz
+quiz.time=c(15, 12, 13, 19, 18, 17, 16, 18, 22, 21, 11, 14, 13, 17, 17)
+
+stripchart(quiz.time, 
+           method=&quot;stack&quot;,
+           pch=19, 
+           main=&quot;Student Quiz Completion TIme&quot;, 
+           col=&quot;Red&quot;,
+           offset=0.5, 
+           xlab=&quot;Time (min)&quot;)   </code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<pre class="r"><code># or
+source(&quot;dotplot.R&quot;)
+dotplot(quiz.time)</code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-13-2.png" width="672" /></p>
+<pre class="r"><code>###histogram
+glucose = c(81, 85, 93, 93, 99, 76, 75, 84, 78, 84, 81, 82, 89,
+            + 81, 96, 82, 74, 70, 84, 86, 80, 70, 131, 75, 88, 102, 115,
+            + 89, 82, 79, 106)
+
+hist(glucose)</code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-13-3.png" width="672" /></p>
+<pre class="r"><code>hist(glucose, breaks = 14)    # here breaks is a single number giving the number of cells for the histogram</code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-13-4.png" width="672" /></p>
+<pre class="r"><code>hist(glucose, breaks = seq(60, 140, by = 8), main=&quot;Equal Intervals&quot;) # here breaks is a vector giving the breakpoints between histogram cells</code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-13-5.png" width="672" /></p>
+<pre class="r"><code>hist(glucose, breaks = c(60,75,80,100,140), main=&quot;Unequal Intervals&quot;)</code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-13-6.png" width="672" /></p>
+<pre class="r"><code>###single box-plot#######################
+green = c(34, 24, 10, 16, 52, 76, 33, 31, 46, 24, 18, 26, 57,
+          + 32, 25, 48, 22, 48, 29, 19, 100, -20)
+
+### Boxplot A
+boxplot(green, col = &quot;blue&quot;) ### Default, vertical boxplot</code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-13-7.png" width="672" /></p>
+<pre class="r"><code>### Boxplot B
+### Create a horizontal boxplot
+boxplot(green, horizontal=TRUE, col=&quot;blue&quot;) </code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-13-8.png" width="672" /></p>
+<pre class="r"><code>###box-plot comparison################################
+male = c(6, 0, 2, 1, 2, 4.5, 8, 3, 17, 4.5, 4, 5)
+female = c(5, 13, 3, 2, 6, 14, 3, 1, 1.5, 1.5, 3, 8, 4)
+boxplot(list(male = male, female = female), col=&quot;red&quot;)</code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-13-9.png" width="672" /></p>
+<pre class="r"><code>growthDark = c(15, 20, 11, 30, 33, 22, 37, 20, 29, 35, 8, 10, 15, 25)
+growthLight = c(10, 15, 22, 25, 9, 15, 4, 11, 20, 21, 27, 20, 10, 20)
+boxplot(list(dark = growthDark, light = growthLight),col=c(&quot;red&quot;,&quot;blue&quot;))</code></pre>
+<p><img src="/R-Work/post/Introduction/Introduction_files/figure-html/unnamed-chunk-13-10.png" width="672" /></p>

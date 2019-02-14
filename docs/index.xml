@@ -6,10 +6,21 @@
     <description>Recent content on R Labs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://scrable.github.io/R-Work/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to R</title>
+      <link>https://scrable.github.io/R-Work/introduction/</link>
+      <pubDate>Wed, 13 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://scrable.github.io/R-Work/introduction/</guid>
+      <description>##1. Entering data ###1.1 Defining variables
+x=3 y=4 3*x ## [1] 9 x+y ## [1] 7 y^2 ## [1] 16 ###1.2 Using c() function
+my.data=c(11,14,22,15) #this code will create your dataset and assign it the variable name my.data my.data #If you want to know what a variable holds, you must ask for it by name ## [1] 11 14 22 15 my.data+500 ## [1] 511 514 522 515 2*my.data ## [1] 22 28 44 30 length(my.</description>
+    </item>
     
     <item>
       <title>MATH 324 Computer HW 1</title>
