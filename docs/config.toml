@@ -1,5 +1,4 @@
-baseurl = "https://scrable.github.io/R-Work/"
-publishDir = "."
+baseurl = "/"
 languageCode = "en-us"
 title = "R Labs"
 theme = "minimal-bootstrap-hugo-theme"
