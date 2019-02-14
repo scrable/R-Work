@@ -6,10 +6,19 @@
     <description>Recent content in Posts on R Labs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 14 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://scrable.github.io/R-Work/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MATH 324 Computer HW 1</title>
+      <link>https://scrable.github.io/R-Work/homework-1/</link>
+      <pubDate>Thu, 14 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://scrable.github.io/R-Work/homework-1/</guid>
+      <description>Exercise 1: (a) Use c() to generate two datasets. modifiedMortar=c(16.85, 16.40, 17.21, 16.35, 16.52, 17.04, 16.96, 17.15, 16.59, 16.57) unmodifiedMortar=c(16.62, 16.75, 17.37, 17.12, 16.98, 16.87, 17.34, 17.02, 17.08, 17.27)  (b) Use mean() and median() to calculate the mean and median of each dataset. mean(modifiedMortar) ## [1] 16.764 median(modifiedMortar) ## [1] 16.72 mean(unmodifiedMortar) ## [1] 17.042 median(unmodifiedMortar) ## [1] 17.05  (c) Use sd(), var() and IQR() to calculate the sample standard deviation, sample variance  and IQR of each dataset.</description>
+    </item>
     
     <item>
       <title>Introduction to R</title>
@@ -20,15 +29,6 @@
       <description>##1. Entering data ###1.1 Defining variables
 x=3 y=4 3*x ## [1] 9 x+y ## [1] 7 y^2 ## [1] 16 ###1.2 Using c() function
 my.data=c(11,14,22,15) #this code will create your dataset and assign it the variable name my.data my.data #If you want to know what a variable holds, you must ask for it by name ## [1] 11 14 22 15 my.data+500 ## [1] 511 514 522 515 2*my.data ## [1] 22 28 44 30 length(my.</description>
-    </item>
-    
-    <item>
-      <title>MATH 324 Computer HW 1</title>
-      <link>https://scrable.github.io/R-Work/homework-1/</link>
-      <pubDate>Wed, 14 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://scrable.github.io/R-Work/homework-1/</guid>
-      <description>Exercise 1: (a) Use c() to generate two datasets. modifiedMortar=c(16.85, 16.40, 17.21, 16.35, 16.52, 17.04, 16.96, 17.15, 16.59, 16.57) unmodifiedMortar=c(16.62, 16.75, 17.37, 17.12, 16.98, 16.87, 17.34, 17.02, 17.08, 17.27)  (b) Use mean() and median() to calculate the mean and median of each dataset. mean(modifiedMortar) ## [1] 16.764 median(modifiedMortar) ## [1] 16.72 mean(unmodifiedMortar) ## [1] 17.042 median(unmodifiedMortar) ## [1] 17.05  (c) Use sd(), var() and IQR() to calculate the sample standard deviation, sample variance  and IQR of each dataset.</description>
     </item>
     
   </channel>

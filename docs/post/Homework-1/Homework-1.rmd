@@ -1,7 +1,7 @@
 ---
 title: "MATH 324 Computer HW 1"
 author: "Corey Russ"
-date: 2018-02-14
+date: 2019-02-14
 output:
   html_document: default
   pdf_document: default
