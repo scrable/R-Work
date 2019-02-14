@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Labs</title>
+    <link>/</link>
+    <description>Recent content on R Labs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MATH 324 Computer HW 1</title>
+      <link>/homework-1/</link>
+      <pubDate>Wed, 14 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/homework-1/</guid>
+      <description>Exercise 1: (a) Use c() to generate two datasets. modifiedMortar=c(16.85, 16.40, 17.21, 16.35, 16.52, 17.04, 16.96, 17.15, 16.59, 16.57) unmodifiedMortar=c(16.62, 16.75, 17.37, 17.12, 16.98, 16.87, 17.34, 17.02, 17.08, 17.27)  (b) Use mean() and median() to calculate the mean and median of each dataset. mean(modifiedMortar) ## [1] 16.764 median(modifiedMortar) ## [1] 16.72 mean(unmodifiedMortar) ## [1] 17.042 median(unmodifiedMortar) ## [1] 17.05  (c) Use sd(), var() and IQR() to calculate the sample standard deviation, sample variance  and IQR of each dataset.</description>
+    </item>
+    
+  </channel>
+</rss>

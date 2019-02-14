@@ -1,4 +1,5 @@
 baseurl = "/"
+publishDir = "."
 languageCode = "en-us"
 title = "R Labs"
 theme = "minimal-bootstrap-hugo-theme"
