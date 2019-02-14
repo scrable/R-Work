@@ -20,14 +20,5 @@
       <description>Exercise 1: (a) Use c() to generate two datasets. modifiedMortar=c(16.85, 16.40, 17.21, 16.35, 16.52, 17.04, 16.96, 17.15, 16.59, 16.57) unmodifiedMortar=c(16.62, 16.75, 17.37, 17.12, 16.98, 16.87, 17.34, 17.02, 17.08, 17.27)  (b) Use mean() and median() to calculate the mean and median of each dataset. mean(modifiedMortar) ## [1] 16.764 median(modifiedMortar) ## [1] 16.72 mean(unmodifiedMortar) ## [1] 17.042 median(unmodifiedMortar) ## [1] 17.05  (c) Use sd(), var() and IQR() to calculate the sample standard deviation, sample variance  and IQR of each dataset.</description>
     </item>
     
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
-    </item>
-    
   </channel>
 </rss>
