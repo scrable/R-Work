@@ -12,26 +12,26 @@
   
 
   
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://scrable.github.io/R-Work/apple-touch-icon.png">
 
   
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://scrable.github.io/R-Work/favicon-32x32.png">
 
   
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://scrable.github.io/R-Work/favicon-16x16.png">
 
   
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="https://scrable.github.io/R-Work/site.webmanifest">
 
   
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="mask-icon" href="https://scrable.github.io/R-Work/safari-pinned-tab.svg" color="#5bbad5">
 
   <meta name="msapplication-TileColor" content="#da532c">
 
   <meta name="theme-color" content="#ffffff">
 
   
-  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://scrable.github.io/R-Work/css/bootstrap.min.css" />
 
   
   <title>MATH 324 Computer HW 1 | R Labs</title>
@@ -170,9 +170,9 @@ blockquote,
   <nav class="custom-navbar">
   <div class="container">
     
-    <a href="/">Posts</a>
+    <a href="/R-Work/">Posts</a>
     
-    <a href="/about/">About</a>
+    <a href="/R-Work/about/">About</a>
     
   </div>
 </nav>
@@ -230,9 +230,9 @@ unmodifiedMortar=c(16.62, 16.75, 17.37, 17.12, 16.98, 16.87, 17.34, 17.02, 17.08
 <div id="d-construct-the-histograms-for-the-two-datasets-and-make-comments-about-the-shapes." class="section level4">
 <h4>(d) Construct the histograms for the two datasets and make comments about the shapes.</h4>
 <pre class="r"><code>hist(modifiedMortar)</code></pre>
-<p><img src="/post/Homework-1/Homework-1_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="/R-Work/post/Homework-1/Homework-1_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <pre class="r"><code>hist(unmodifiedMortar)</code></pre>
-<p><img src="/post/Homework-1/Homework-1_files/figure-html/unnamed-chunk-4-2.png" width="672" /></p>
+<p><img src="/R-Work/post/Homework-1/Homework-1_files/figure-html/unnamed-chunk-4-2.png" width="672" /></p>
 <p>The modified mortar has one cluster of data with higher frequency. The unmodified mortar is more spread out over all of the data.</p>
 </div>
 <div id="e-construct-comparative-box-plots-for-the-two-groups-and-make-comments-about-the" class="section level4">
@@ -241,7 +241,7 @@ unmodifiedMortar=c(16.62, 16.75, 17.37, 17.12, 16.98, 16.87, 17.34, 17.02, 17.08
 <div id="similarity-and-difference." class="section level4">
 <h4>similarity and difference.</h4>
 <pre class="r"><code>boxplot(list(modifiedMortar=modifiedMortar, unmodifiedMortar=unmodifiedMortar), col=&quot;blue&quot;)</code></pre>
-<p><img src="/post/Homework-1/Homework-1_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="/R-Work/post/Homework-1/Homework-1_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <p>The median of the modified mortar is lower than the median of the unmodified mortar. The median of the unmodified mortar is the Q3 of modified mortar.</p>
 </div>
 </div>
@@ -263,12 +263,12 @@ unmodifiedMortar=c(16.62, 16.75, 17.37, 17.12, 16.98, 16.87, 17.34, 17.02, 17.08
 <div id="c-construct-pie-chart-using-pie.-add-colors-and-title-to-the-chart." class="section level4">
 <h4>(c) Construct pie chart using pie(). Add colors and title to the chart.</h4>
 <pre class="r"><code>pie(survey,labels=survey[1:30],col=rainbow(30), main=&quot;Number of Courses Taken per Student for 30 Students&quot;)</code></pre>
-<p><img src="/post/Homework-1/Homework-1_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="/R-Work/post/Homework-1/Homework-1_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 </div>
 <div id="d-construct-bar-plot-using-barplot.-add-color-and-title-to-the-plot." class="section level4">
 <h4>(d) Construct bar-plot using barplot(). Add color and title to the plot.</h4>
 <pre class="r"><code>barplot(survey, col=rainbow(30),main=&quot;Number of Courses Taken per Student&quot;)</code></pre>
-<p><img src="/post/Homework-1/Homework-1_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p><img src="/R-Work/post/Homework-1/Homework-1_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 </div>
 <div id="e-use-r-functions-to-count-how-many-students-are-taking-more-than-three-courses." class="section level4">
 <h4>(e) Use R functions to count how many students are taking more than three courses.</h4>
