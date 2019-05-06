@@ -1,0 +1,111 @@
+---
+title: " MATH 324 Homework 3"
+author: "Corey Russ"
+date: "5/5/2019"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+
+<div id="exercise-1" class="section level2">
+<h2>Exercise 1:</h2>
+<div id="a" class="section level4">
+<h4>A:</h4>
+<pre class="r"><code>p1=qnorm(.75, 520, 80)
+p1</code></pre>
+<pre><code>## [1] 573.9592</code></pre>
+</div>
+<div id="yes-he-will-be-admitted-since-595-573.9592" class="section level3">
+<h3>Yes he will be admitted since 595 &gt; 573.9592</h3>
+<div id="b" class="section level4">
+<h4>B:</h4>
+<pre class="r"><code>p2=1 - pnorm(600, 520, 80)
+p2</code></pre>
+<pre><code>## [1] 0.1586553</code></pre>
+</div>
+</div>
+</div>
+<div id="exercise-2" class="section level1">
+<h1>Exercise 2:</h1>
+<div id="a-1" class="section level4">
+<h4>A:</h4>
+</div>
+<div id="x-is-number-of-years-computer-part-lasts" class="section level3">
+<h3>X is number of years computer part lasts</h3>
+</div>
+<div id="px-8" class="section level3">
+<h3>P(X &gt; 8)</h3>
+<pre class="r"><code>L=1/7
+L</code></pre>
+<pre><code>## [1] 0.1428571</code></pre>
+<pre class="r"><code>exp(-L*8)</code></pre>
+<pre><code>## [1] 0.3189066</code></pre>
+<div id="b-1" class="section level4">
+<h4>B:</h4>
+</div>
+</div>
+</div>
+<div id="of-parts-last-how-long" class="section level1">
+<h1>80% of parts last how long?</h1>
+<div id="e-17t-.8-t-ln0.80--17" class="section level3">
+<h3>e^((-1/7)*T) = .8
+### T = ln(0.80) / (-1/7)</h3>
+<pre class="r"><code>T=(log(.8)/(-1/7))
+T</code></pre>
+<pre><code>## [1] 1.562005</code></pre>
+<div id="t-1.562-years" class="section level4">
+<h4>T = 1.562 years</h4>
+</div>
+<div id="about-1-year-6-months-2-weeks" class="section level4">
+<h4>About 1 year 6 months 2 weeks</h4>
+</div>
+</div>
+</div>
+<div id="exercise-3" class="section level1">
+<h1>Exercise 3:</h1>
+<div id="a-2" class="section level4">
+<h4>A:</h4>
+<pre class="r"><code>laser1=rexp(1000,1/80)
+laser2=rexp(1000,1/80)</code></pre>
+</div>
+<div id="b-2" class="section level4">
+<h4>B:</h4>
+<pre class="r"><code>combined_laser=laser1+laser2
+greater_than_100_hours=length(which(combined_laser &gt; 100))
+greater_than_100_hours/1000</code></pre>
+<pre><code>## [1] 0.652</code></pre>
+</div>
+<div id="c" class="section level4">
+<h4>C:</h4>
+<pre class="r"><code>greater_than_50_hours=length(which(laser1 &gt; 50 &amp; laser2 &gt; 50))
+greater_than_50_hours/1000</code></pre>
+<pre><code>## [1] 0.285</code></pre>
+</div>
+</div>
+<div id="example-4" class="section level1">
+<h1>Example 4:</h1>
+<div id="mean-1300-lbs" class="section level4">
+<h4>mean: 1300 lbs</h4>
+</div>
+<div id="stdev-150-lbs" class="section level4">
+<h4>stdev: 150 lbs</h4>
+</div>
+<div id="randomly-measure-50-cows" class="section level4">
+<h4>randomly measure 50 cows</h4>
+</div>
+<div id="a-3" class="section level4">
+<h4>A:</h4>
+<pre class="r"><code>sd1=150/sqrt(50)
+p1=pnorm(1320,1300,sd1,lower.tail=FALSE)
+p1</code></pre>
+<pre><code>## [1] 0.1728893</code></pre>
+</div>
+<div id="b-3" class="section level4">
+<h4>B:</h4>
+<pre class="r"><code>p2=pnorm(1350,1300,sd1)-pnorm(1250,1300,sd1)
+p2</code></pre>
+<pre><code>## [1] 0.9815779</code></pre>
+</div>
+</div>
