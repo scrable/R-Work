@@ -1,0 +1,87 @@
+---
+title: " MATH 324 Homework 3"
+author: "Corey Russ"
+date: "5/5/2019"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+## Exercise 1:
+#### A:
+```{r}
+p1=qnorm(.75, 520, 80)
+p1
+```
+### Yes he will be admitted since 595 > 573.9592
+
+#### B:
+```{r}
+p2=1 - pnorm(600, 520, 80)
+p2
+```
+
+# Exercise 2:
+#### A:
+### X is number of years computer part lasts
+### P(X > 8)
+```{r}
+L=1/7
+L
+exp(-L*8)
+```
+
+#### B:
+# 80% of parts last how long?
+### e^((-1/7)*T) = .8
+### T = ln(0.80) / (-1/7)
+```{r}
+T=(log(.8)/(-1/7))
+T
+```
+#### T = 1.562 years
+#### About 1 year 6 months 2 weeks
+
+# Exercise 3:
+
+#### A:
+```{r}
+laser1=rexp(1000,1/80)
+laser2=rexp(1000,1/80)
+```
+#### B:
+```{r}
+combined_laser=laser1+laser2
+greater_than_100_hours=length(which(combined_laser > 100))
+greater_than_100_hours/1000
+```
+
+#### C:
+```{r}
+greater_than_50_hours=length(which(laser1 > 50 & laser2 > 50))
+greater_than_50_hours/1000
+```
+
+# Example 4:
+
+#### mean: 1300 lbs
+#### stdev: 150 lbs
+#### randomly measure 50 cows
+
+#### A:
+```{r}
+sd1=150/sqrt(50)
+p1=pnorm(1320,1300,sd1,lower.tail=FALSE)
+p1
+```
+
+#### B:
+```{r}
+p2=pnorm(1350,1300,sd1)-pnorm(1250,1300,sd1)
+p2
+```
+
+
+
+
+
