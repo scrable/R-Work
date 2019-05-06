@@ -6,10 +6,19 @@
     <description>Recent content on R Labs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 14 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/R-Work/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title> MATH 324 Homework 3</title>
+      <link>/R-Work/homework-3/</link>
+      <pubDate>Sun, 05 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/R-Work/homework-3/</guid>
+      <description>Exercise 1: A: p1=qnorm(.75, 520, 80) p1 ## [1] 573.9592  Yes he will be admitted since 595 &amp;gt; 573.9592 B: p2=1 - pnorm(600, 520, 80) p2 ## [1] 0.1586553    Exercise 2: A:  X is number of years computer part lasts  P(X &amp;gt; 8) L=1/7 L ## [1] 0.1428571 exp(-L*8) ## [1] 0.3189066 B:    80% of parts last how long? e^((-1/7)*T) = .</description>
+    </item>
     
     <item>
       <title>MATH 324 Computer HW 1</title>
@@ -41,15 +50,6 @@ It makes use of a variety of open source projects including:
       <description>##1. Entering data ###1.1 Defining variables
 x=3 y=4 3*x ## [1] 9 x+y ## [1] 7 y^2 ## [1] 16 ###1.2 Using c() function
 my.data=c(11,14,22,15) #this code will create your dataset and assign it the variable name my.data my.data #If you want to know what a variable holds, you must ask for it by name ## [1] 11 14 22 15 my.data+500 ## [1] 511 514 522 515 2*my.data ## [1] 22 28 44 30 length(my.</description>
-    </item>
-    
-    <item>
-      <title> MATH 324 Homework 3</title>
-      <link>/R-Work/homework-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/R-Work/homework-3/</guid>
-      <description>Exercise 1: A: p1=qnorm(.75, 520, 80) p1 ## [1] 573.9592  Yes he will be admitted since 595 &amp;gt; 573.9592 B: p2=1 - pnorm(600, 520, 80) p2 ## [1] 0.1586553    Exercise 2: A:  X is number of years computer part lasts  P(X &amp;gt; 8) L=1/7 L ## [1] 0.1428571 exp(-L*8) ## [1] 0.3189066 B:    80% of parts last how long? e^((-1/7)*T) = .</description>
     </item>
     
   </channel>

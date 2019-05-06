@@ -1,7 +1,7 @@
 ---
 title: " MATH 324 Homework 3"
 author: "Corey Russ"
-date: "5/5/2019"
+date: 2019-05-05
 output:
   pdf_document: default
   html_document: default
@@ -34,7 +34,7 @@ exp(-L*8)
 #### B:
 # 80% of parts last how long?
 ### e^((-1/7)*T) = .8
-### T = ln(0.80) / (-1/7)
+
 ```{r}
 T=(log(.8)/(-1/7))
 T

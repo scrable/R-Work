@@ -184,7 +184,7 @@ blockquote,
   <small class="text-secondary">
   
   
-  Jan 1, 0001
+  May 5, 2019
   </small>
   
 </p>
@@ -231,9 +231,8 @@ L</code></pre>
 </div>
 <div id="of-parts-last-how-long" class="section level1">
 <h1>80% of parts last how long?</h1>
-<div id="e-17t-.8-t-ln0.80--17" class="section level3">
-<h3>e^((-1/7)*T) = .8
-### T = ln(0.80) / (-1/7)</h3>
+<div id="e-17t-.8" class="section level3">
+<h3>e^((-1/7)*T) = .8</h3>
 <pre class="r"><code>T=(log(.8)/(-1/7))
 T</code></pre>
 <pre><code>## [1] 1.562005</code></pre>
@@ -257,13 +256,13 @@ laser2=rexp(1000,1/80)</code></pre>
 <pre class="r"><code>combined_laser=laser1+laser2
 greater_than_100_hours=length(which(combined_laser &gt; 100))
 greater_than_100_hours/1000</code></pre>
-<pre><code>## [1] 0.65</code></pre>
+<pre><code>## [1] 0.645</code></pre>
 </div>
 <div id="c" class="section level4">
 <h4>C:</h4>
 <pre class="r"><code>greater_than_50_hours=length(which(laser1 &gt; 50 &amp; laser2 &gt; 50))
 greater_than_50_hours/1000</code></pre>
-<pre><code>## [1] 0.297</code></pre>
+<pre><code>## [1] 0.285</code></pre>
 </div>
 </div>
 <div id="example-4" class="section level1">
