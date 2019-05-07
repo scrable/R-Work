@@ -62,7 +62,7 @@ greater_than_50_hours=length(which(laser1 > 50 & laser2 > 50))
 greater_than_50_hours/1000
 ```
 
-# Example 4:
+# Exercise 4:
 
 #### mean: 1300 lbs
 #### stdev: 150 lbs
