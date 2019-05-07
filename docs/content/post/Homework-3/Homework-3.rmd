@@ -21,7 +21,7 @@ p2=1 - pnorm(600, 520, 80)
 p2
 ```
 
-# Exercise 2:
+## Exercise 2:
 #### A:
 ### X is number of years computer part lasts
 ### P(X > 8)
@@ -42,7 +42,7 @@ T
 #### T = 1.562 years
 #### About 1 year 6 months 2 weeks
 
-# Exercise 3:
+## Exercise 3:
 
 #### A:
 ```{r}
@@ -62,7 +62,7 @@ greater_than_50_hours=length(which(laser1 > 50 & laser2 > 50))
 greater_than_50_hours/1000
 ```
 
-# Exercise 4:
+## Exercise 4:
 
 #### mean: 1300 lbs
 #### stdev: 150 lbs
